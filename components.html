@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components | NextBigThing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <nav>
+            <a href="index.html" class="logo">NextBigThing.</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Idea Generator</a>
+                <a href="components.html" class="nav-link active">Components</a>
+            </div>
+        </nav>
+
+        <main>
+            <section class="hero compact">
+                <h1>UI Component <span class="gradient-text">Studio</span></h1>
+                <p class="subtitle">Generate layout ideas tailored to your project.</p>
+
+                <div class="input-container">
+                    <input type="text" id="context-input" placeholder="Enter your website idea (e.g. 'Vegan Bakery')"
+                        class="glass-input">
+                </div>
+            </section>
+
+            <div class="grid-container">
+                <!-- Navbar Generator -->
+                <section class="generator-container small">
+                    <div class="card glass">
+                        <div class="card-content">
+                            <div class="label">Navigation Bar</div>
+                            <h3 id="nav-display">Click to generate</h3>
+                            <pre class="code-block hidden"><code id="nav-code"></code></pre>
+                        </div>
+                        <div class="card-actions">
+                            <button id="gen-nav-btn" class="btn primary small-btn">
+                                <span class="icon">🧭</span> Generate
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Header Generator -->
+                <section class="generator-container small">
+                    <div class="card glass">
+                        <div class="card-content">
+                            <div class="label">Hero / Header</div>
+                            <h3 id="header-display">Click to generate</h3>
+                            <pre class="code-block hidden"><code id="header-code"></code></pre>
+                        </div>
+                        <div class="card-actions">
+                            <button id="gen-header-btn" class="btn primary small-btn">
+                                <span class="icon">🖼️</span> Generate
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Footer Generator -->
+                <section class="generator-container small">
+                    <div class="card glass">
+                        <div class="card-content">
+                            <div class="label">Footer</div>
+                            <h3 id="footer-display">Click to generate</h3>
+                            <pre class="code-block hidden"><code id="footer-code"></code></pre>
+                        </div>
+                        <div class="card-actions">
+                            <button id="gen-footer-btn" class="btn primary small-btn">
+                                <span class="icon">🦶</span> Generate
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>Built for builders. &copy; 2026.</p>
+        </footer>
+    </div>
+    <script type="module" src="src/generators.js"></script>
+</body>
+
+</html>
