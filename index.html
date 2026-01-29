@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NextBigThing | Website Idea Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+    <meta name="description" content="Generate unique, profitable website ideas instantly.">
+</head>
+
+<body>
+    <div id="app">
+        <nav>
+            <div class="logo">NextBigThing.</div>
+        </nav>
+
+        <main>
+            <section class="hero">
+                <h1>Spark Your Next <span class="gradient-text">Billion Dollar</span> Idea</h1>
+                <p class="subtitle">Stop overthinking. Start building. Generate unique concepts instantly.</p>
+            </section>
+
+            <section class="generator-container">
+                <div class="card glass">
+                    <div class="card-content">
+                        <div class="label">Your Idea</div>
+                        <h2 id="idea-display">Click generate to start...</h2>
+                        <div class="tags" id="tags-display">
+                            <!-- Tags like "SaaS", "B2B", etc will go here -->
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button id="generate-btn" class="btn primary">
+                            <span class="icon">✨</span> Generate Idea
+                        </button>
+                        <button id="save-btn" class="btn secondary" disabled>
+                            <span class="icon">💾</span> Save
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="saved-ideas" id="saved-section">
+                <h2>Saved Ideas</h2>
+                <div id="saved-list" class="saved-list">
+                    <!-- Saved ideas will be injected here -->
+                    <p class="empty-state">No ideas saved yet.</p>
+                </div>
+            </section>
+
+            <section class="details glass hidden" id="details-section">
+                <div class="detail-item">
+                    <h3>Target Audience</h3>
+                    <p id="audience-display">-</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Revenue Model</h3>
+                    <p id="revenue-display">-</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Key Feature</h3>
+                    <p id="feature-display">-</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Built for builders. &copy; 2026.</p>
+        </footer>
+    </div>
+    <script type="module" src="src/main.js"></script>
+</body>
+
+</html>
